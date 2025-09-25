@@ -41,15 +41,18 @@ export class PostagemController {
     return this.postagemService.create(postagem);
   }
 
-  @Put()
+  @Put(':id')
   @HttpCode(HttpStatus.OK)
-  update(@Body() postagem: Postagem): Promise<Postagem> {
-    return this.postagemService.update(postagem);
+  update(
+    @Param('id', ParseIntPipe) id: number,
+    @Body() postagem: Postagem,
+  ): Promise<Postagem> {
+    return this.postagemService.update(id, postagem);
   }
 
   @Delete(':id')
   @HttpCode(HttpStatus.NO_CONTENT)
-  delete(@Param('id') id: number) {
-    return this.postagemService.delete(id);
+  async delete(@Param('id') id: number): Promise<void> {
+    await this.postagemService.delete(id);
   }
 }
