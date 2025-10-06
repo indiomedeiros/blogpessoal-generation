@@ -2,7 +2,7 @@
 
 ## Visão Geral do Projeto
 
-Este projeto é uma API para um blog pessoal, desenvolvida com o framework NestJS. A API permite a criação, leitura, atualização e exclusão de postagens, bem como o gerenciamento de temas (categorias) e usuários. A autenticação é baseada em JSON Web Tokens (JWT), e a API é documentada com Swagger.
+Este projeto de aula, uma API para um blog pessoal, desenvolvida com o framework NestJS. A API permite a criação, leitura, atualização e exclusão de postagens, bem como o gerenciamento de temas (categorias) e usuários. A autenticação é baseada em JSON Web Tokens (JWT), e a API é documentada com Swagger.
 
 ## Tecnologias Utilizadas
 
